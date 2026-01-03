@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^paxscan-svm-api-sdk$': '<rootDir>/src/index.ts',
-    '^paxscan-svm-api-sdk/(.*)$': '<rootDir>/src/$1',
+    '^@paxeer-network/paxscan-svm-api-sdk$': '<rootDir>/src/index.ts',
+    '^@paxeer-network/paxscan-svm-api-sdk/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',

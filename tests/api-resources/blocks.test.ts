@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import PaxscanSvmAPISDK from 'paxscan-svm-api-sdk';
+import PaxscanSvmAPISDK from '@paxeer-network/paxscan-svm-api-sdk';
 
 const client = new PaxscanSvmAPISDK({
   apiKey: 'My API Key',

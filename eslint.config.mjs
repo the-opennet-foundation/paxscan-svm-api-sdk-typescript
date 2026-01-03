@@ -25,7 +25,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^paxscan-svm-api-sdk(/.*)?',
+              regex: '^@paxeer-network/paxscan-svm-api-sdk(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],

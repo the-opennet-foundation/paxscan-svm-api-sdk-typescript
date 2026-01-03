@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'paxscan-svm-api-sdk/core/api-promise';
+import { APIPromise } from '@paxeer-network/paxscan-svm-api-sdk/core/api-promise';
 
 import util from 'node:util';
-import PaxscanSvmAPISDK from 'paxscan-svm-api-sdk';
-import { APIUserAbortError } from 'paxscan-svm-api-sdk';
+import PaxscanSvmAPISDK from '@paxeer-network/paxscan-svm-api-sdk';
+import { APIUserAbortError } from '@paxeer-network/paxscan-svm-api-sdk';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {
