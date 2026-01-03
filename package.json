@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "type": "commonjs",
-  "repository": "github:stainless-sdks/paxscan-svm-api-sdk-typescript",
+  "repository": "github:the-opennet-foundation/paxscan-svm-api-sdk-typescript",
   "license": "MIT",
   "packageManager": "pnpm@10.24.0",
   "files": [
