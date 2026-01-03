@@ -1,6 +1,6 @@
 {
   "name": "@paxeer-network/paxscan-svm-api-sdk",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The official TypeScript library for the Paxscan Svm API SDK API",
   "author": "Paxscan Svm API SDK <>",
   "types": "dist/index.d.ts",
