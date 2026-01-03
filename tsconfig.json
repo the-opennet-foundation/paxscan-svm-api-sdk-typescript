@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "paxscan-svm-api-sdk/*": ["./src/*"],
-      "paxscan-svm-api-sdk": ["./src/index.ts"]
+      "@paxeer-network/paxscan-svm-api-sdk/*": ["./src/*"],
+      "@paxeer-network/paxscan-svm-api-sdk": ["./src/index.ts"]
     },
     "noEmit": true,
 

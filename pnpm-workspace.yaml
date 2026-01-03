@@ -2,4 +2,4 @@ onlyBuiltDependencies:
   - '@swc/core'
 minimumReleaseAge: 1440
 minimumReleaseAgeExclude:
-  - paxscan-svm-api-sdk
+  - '@paxeer-network/paxscan-svm-api-sdk'
