@@ -1,6 +1,6 @@
 import fs from 'fs';
-import type { ResponseLike } from 'paxscan-svm-api-sdk/internal/to-file';
-import { toFile } from 'paxscan-svm-api-sdk/core/uploads';
+import type { ResponseLike } from '@paxeer-network/paxscan-svm-api-sdk/internal/to-file';
+import { toFile } from '@paxeer-network/paxscan-svm-api-sdk/core/uploads';
 import { File } from 'node:buffer';
 
 class MyClass {
@@ -97,7 +97,7 @@ describe('missing File error message', () => {
   });
 
   test('is thrown', async () => {
-    const uploads = await import('paxscan-svm-api-sdk/core/uploads');
+    const uploads = await import('@paxeer-network/paxscan-svm-api-sdk/core/uploads');
     await expect(
       uploads.toFile(mockResponse({ url: 'https://example.com/my/audio.mp3' })),
     ).rejects.toMatchInlineSnapshot(

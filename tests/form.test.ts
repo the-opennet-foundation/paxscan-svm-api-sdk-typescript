@@ -1,5 +1,8 @@
-import { multipartFormRequestOptions, createForm } from 'paxscan-svm-api-sdk/internal/uploads';
-import { toFile } from 'paxscan-svm-api-sdk/core/uploads';
+import {
+  multipartFormRequestOptions,
+  createForm,
+} from '@paxeer-network/paxscan-svm-api-sdk/internal/uploads';
+import { toFile } from '@paxeer-network/paxscan-svm-api-sdk/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {
