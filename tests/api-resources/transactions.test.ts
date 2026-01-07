@@ -39,7 +39,11 @@ describe('resource transactions', () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
       client.transactions.list(
-        { limit: 1, offset: 0, status: 'success' },
+        {
+          limit: 1,
+          offset: 0,
+          status: 'success',
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(PaxscanSvmAPISDK.NotFoundError);

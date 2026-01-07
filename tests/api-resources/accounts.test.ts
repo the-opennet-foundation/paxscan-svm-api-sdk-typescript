@@ -74,7 +74,12 @@ describe('resource accounts', () => {
     await expect(
       client.accounts.retrieveTransactions(
         'pubkey',
-        { after: 'after', before: 'before', limit: 1, offset: 0 },
+        {
+          after: 'after',
+          before: 'before',
+          limit: 1,
+          offset: 0,
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(PaxscanSvmAPISDK.NotFoundError);

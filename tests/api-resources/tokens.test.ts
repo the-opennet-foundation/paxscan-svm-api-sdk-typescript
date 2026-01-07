@@ -36,7 +36,14 @@ describe('resource tokens', () => {
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
-      client.tokens.list({ limit: 1, offset: 0, sort: 'holders' }, { path: '/_stainless_unknown_path' }),
+      client.tokens.list(
+        {
+          limit: 1,
+          offset: 0,
+          sort: 'holders',
+        },
+        { path: '/_stainless_unknown_path' },
+      ),
     ).rejects.toThrow(PaxscanSvmAPISDK.NotFoundError);
   });
 
