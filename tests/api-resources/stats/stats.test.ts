@@ -8,7 +8,7 @@ const client = new PaxscanSvmAPISDK({
 });
 
 describe('resource stats', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('checkHealth', async () => {
     const responsePromise = client.stats.checkHealth();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource stats', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveEpoch', async () => {
     const responsePromise = client.stats.retrieveEpoch();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource stats', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveNetwork', async () => {
     const responsePromise = client.stats.retrieveNetwork();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource stats', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveSupply', async () => {
     const responsePromise = client.stats.retrieveSupply();
     const rawResponse = await responsePromise.asResponse();
@@ -56,7 +56,7 @@ describe('resource stats', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveValidators', async () => {
     const responsePromise = client.stats.retrieveValidators();
     const rawResponse = await responsePromise.asResponse();
