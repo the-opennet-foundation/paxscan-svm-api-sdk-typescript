@@ -8,7 +8,7 @@ const client = new PaxscanSvmAPISDK({
 });
 
 describe('resource accounts', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.accounts.retrieve('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource accounts', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveTokenTransfers', async () => {
     const responsePromise = client.accounts.retrieveTokenTransfers('pubkey');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource accounts', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveTokenTransfers: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -44,7 +44,7 @@ describe('resource accounts', () => {
     ).rejects.toThrow(PaxscanSvmAPISDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveTokens', async () => {
     const responsePromise = client.accounts.retrieveTokens('pubkey');
     const rawResponse = await responsePromise.asResponse();
@@ -56,7 +56,7 @@ describe('resource accounts', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveTransactions', async () => {
     const responsePromise = client.accounts.retrieveTransactions('pubkey');
     const rawResponse = await responsePromise.asResponse();
@@ -68,7 +68,7 @@ describe('resource accounts', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveTransactions: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

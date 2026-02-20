@@ -8,7 +8,7 @@ const client = new PaxscanSvmAPISDK({
 });
 
 describe('resource search', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('perform', async () => {
     const responsePromise = client.search.perform('xxxx');
     const rawResponse = await responsePromise.asResponse();
