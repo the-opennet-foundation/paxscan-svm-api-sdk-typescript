@@ -60,7 +60,7 @@ $ yarn link @paxeer-network/paxscan-svm-api-sdk
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link -—global @paxeer-network/paxscan-svm-api-sdk
+$ pnpm link --global @paxeer-network/paxscan-svm-api-sdk
 ```
 
 ## Running tests
