@@ -8,7 +8,7 @@ const client = new PaxscanSvmAPISDK({
 });
 
 describe('resource tps', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveHistory', async () => {
     const responsePromise = client.stats.tps.retrieveHistory();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource tps', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveHistory: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

@@ -1,6 +1,6 @@
 {
   "name": "@paxeer-network/paxscan-svm-api-sdk",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The official TypeScript library for the Paxscan Svm API SDK API",
   "author": "Paxscan Svm API SDK <>",
   "types": "dist/index.d.ts",
@@ -8,7 +8,7 @@
   "type": "commonjs",
   "repository": "github:the-opennet-foundation/paxscan-svm-api-sdk-typescript",
   "license": "MIT",
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.30.1",
   "files": [
     "**/*"
   ],

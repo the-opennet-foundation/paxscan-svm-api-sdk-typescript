@@ -8,7 +8,7 @@ const client = new PaxscanSvmAPISDK({
 });
 
 describe('resource tokens', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.tokens.retrieve('mint');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource tokens', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.tokens.list();
     const rawResponse = await responsePromise.asResponse();
@@ -32,15 +32,22 @@ describe('resource tokens', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
-      client.tokens.list({ limit: 1, offset: 0, sort: 'holders' }, { path: '/_stainless_unknown_path' }),
+      client.tokens.list(
+        {
+          limit: 1,
+          offset: 0,
+          sort: 'holders',
+        },
+        { path: '/_stainless_unknown_path' },
+      ),
     ).rejects.toThrow(PaxscanSvmAPISDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listHolders', async () => {
     const responsePromise = client.tokens.listHolders('mint');
     const rawResponse = await responsePromise.asResponse();
@@ -52,7 +59,7 @@ describe('resource tokens', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listHolders: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -60,7 +67,7 @@ describe('resource tokens', () => {
     ).rejects.toThrow(PaxscanSvmAPISDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listTop', async () => {
     const responsePromise = client.tokens.listTop();
     const rawResponse = await responsePromise.asResponse();
@@ -72,7 +79,7 @@ describe('resource tokens', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listTop: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(client.tokens.listTop({ limit: 1 }, { path: '/_stainless_unknown_path' })).rejects.toThrow(
@@ -80,7 +87,7 @@ describe('resource tokens', () => {
     );
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listTransfers', async () => {
     const responsePromise = client.tokens.listTransfers('mint');
     const rawResponse = await responsePromise.asResponse();
@@ -92,7 +99,7 @@ describe('resource tokens', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listTransfers: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
