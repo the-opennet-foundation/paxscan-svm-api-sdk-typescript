@@ -4,6 +4,9 @@ import { APIResource } from '../../core/resource';
 import { APIPromise } from '../../core/api-promise';
 import { RequestOptions } from '../../internal/request-options';
 
+/**
+ * Network statistics and health
+ */
 export class Tps extends APIResource {
   /**
    * Get TPS history

@@ -6,6 +6,9 @@ import { APIPromise } from '../core/api-promise';
 import { RequestOptions } from '../internal/request-options';
 import { path } from '../internal/utils/path';
 
+/**
+ * Account information and balances
+ */
 export class Accounts extends APIResource {
   /**
    * Get account details

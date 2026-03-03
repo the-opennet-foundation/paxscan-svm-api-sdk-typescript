@@ -793,11 +793,29 @@ export class PaxscanSvmAPISDK {
 
   static toFile = Uploads.toFile;
 
+  /**
+   * Block data and metadata
+   */
   blocks: API.Blocks = new API.Blocks(this);
+  /**
+   * Transaction details and history
+   */
   transactions: API.Transactions = new API.Transactions(this);
+  /**
+   * Account information and balances
+   */
   accounts: API.Accounts = new API.Accounts(this);
+  /**
+   * SPL token data, holders, and transfers
+   */
   tokens: API.Tokens = new API.Tokens(this);
+  /**
+   * Network statistics and health
+   */
   stats: API.Stats = new API.Stats(this);
+  /**
+   * Universal search across all entities
+   */
   search: API.Search = new API.Search(this);
 }
 
