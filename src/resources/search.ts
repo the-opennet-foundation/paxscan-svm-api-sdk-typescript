@@ -5,6 +5,9 @@ import { APIPromise } from '../core/api-promise';
 import { RequestOptions } from '../internal/request-options';
 import { path } from '../internal/utils/path';
 
+/**
+ * Universal search across all entities
+ */
 export class Search extends APIResource {
   /**
    * Search across blocks, transactions, accounts, and tokens. Automatically detects

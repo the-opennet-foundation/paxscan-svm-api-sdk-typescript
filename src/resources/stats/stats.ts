@@ -6,6 +6,9 @@ import { TpRetrieveHistoryParams, TpRetrieveHistoryResponse, Tps } from './tps';
 import { APIPromise } from '../../core/api-promise';
 import { RequestOptions } from '../../internal/request-options';
 
+/**
+ * Network statistics and health
+ */
 export class Stats extends APIResource {
   tps: TpsAPI.Tps = new TpsAPI.Tps(this._client);
 

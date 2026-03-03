@@ -7,6 +7,9 @@ import { APIPromise } from '../core/api-promise';
 import { RequestOptions } from '../internal/request-options';
 import { path } from '../internal/utils/path';
 
+/**
+ * Transaction details and history
+ */
 export class Transactions extends APIResource {
   /**
    * Get transaction by signature
